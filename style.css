@@ -1,0 +1,51 @@
+/* Gradient Background */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, lightblue, rgb(238, 197, 144));
+}
+header {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-shadow: 2px 2px 5px rgb(201, 22, 22);
+}
+nav {
+    background-color: rgb(106, 198, 14);
+    padding: 15px;
+    text-align: center;
+}
+nav a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+.cards {
+    display:flex;
+    gap: 30px;
+    margin: 30px;
+}
+/* Individual Card */
+.card {
+    background-color: white;
+    width: 250px;
+    padding: 2px;
+    border: 2px solid navy;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px gray;
+    text-align: center;
+}
+.card h2 {
+    font-family: "Times New Roman", serif;
+    font-size: 24px;
+}
+button:hover {
+    background-color: orange;
+}
+button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
