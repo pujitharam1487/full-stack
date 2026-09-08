@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+}
+header {
+    background: #222;
+    color: white;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+nav a:hover {
+    color: #00adb5;
+}
+.home {
+    height: 200px;
+    background: #00adb5;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.home h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.home p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+button {
+    background: #222;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background: white;
+    color: #222;
+}
+
+.about {
+    text-align: center;
+    padding: 30px 20px;
+}
+.about h2,
+.skills h2,
+.contact h2 {
+    margin-bottom: 8px;
+}
+.skills {
+    padding: 10px 20px;
+    text-align: center;
+}
+.skill-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.skill {
+    background: white;
+    width: 250px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px #ccc;
+}
+.skill h3 {
+    color: #00adb5;
+    margin-bottom: 5px;
+}
+
+.contact {
+    text-align: center;
+    padding: 10px 20px;
+}
+form {
+    width: 350px;
+    margin: auto;
+}
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+textarea {
+    height: 100px;
+    resize: none;
+}</style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section id="home" class="home">
+        <div>
+            <h2>Hello</h2>
+            <p>Web Developer | Python Programmer | Student</p>
+            <button>View </button>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+             learning web development and programming.
+             creating websites and solving programming problems.
+        </p>
+    </section>
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <div class="skill-container">
+            <div class="skill">
+                <h3>HTML5</h3>
+                <p>Creating webpage structure.</p>
+            </div>
+            <div class="skill">
+                <h3>CSS3</h3>
+                <p>Designing beautiful webpages.</p>
+            </div>
+            <div class="skill">
+                <h3>Python</h3>
+                <p>Solving programming problems.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact </h2>
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>© 2026 My Portfolio | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
