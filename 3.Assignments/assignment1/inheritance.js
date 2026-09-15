@@ -119,3 +119,25 @@ const f = new Fish("Nemo");
 f.eat();
 f.swim();
 f.jump();
+
+console.log("\n===Multiple Inheritance===");
+const Father = {
+    fatherProperty() {
+        console.log("Property inherited from Father.");
+    }
+};
+
+const Mother = {
+    motherProperty() {
+        console.log("Property inherited from Mother.");
+    }
+};
+
+class ChildMultiple {
+}
+Object.assign(ChildMultiple.prototype, Father, Mother);
+
+const childMultiple = new ChildMultiple();
+
+childMultiple.fatherProperty();
+childMultiple.motherProperty();
