@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <h2 id="heading">Welcome to DOM</h2>
+    <p id="message">This is the original paragraph.</p>
+    <img id="myImage"
+         src="https://via.placeholder.com/200"
+         alt="Original Image"
+         width="200">
+    <br><br>
+    <button onclick="changeContent()">Change Content</button>
+    <button onclick="changeStyle()">Change Style</button>
+    <button onclick="changeAttribute()">Change Attribute</button>
+    <script>
+        // Change content
+        function changeContent() {
+            document.getElementById("message").textContent =
+                "The content has been changed using JavaScript!";
+        }
+        // Change style
+        function changeStyle() {
+            let heading = document.getElementById("heading");
+
+            heading.style.color = "blue";
+            heading.style.backgroundColor = "lightyellow";
+            heading.style.fontSize = "30px";
+        }
+        // Change attribute
+        function changeAttribute() {
+            let image = document.getElementById("myImage");
+
+            image.setAttribute(
+                "src",
+                "https://via.placeholder.com/300"
+            );
+
+            image.setAttribute("alt", "Changed Image");
+            image.setAttribute("width", "300");
+        }
+    </script>
+
+</body>
+</html>
